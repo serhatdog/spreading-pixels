@@ -29,4 +29,4 @@ If you apply a blur operation at the rate that you provide as a parameter to enl
 
 **size**: the **size** parameter entered in the **resize** function
 
-cv2.blur(resizedimage, (*size*, *size*)
+cv2.blur(resizedimage, (*size*, *size*))
