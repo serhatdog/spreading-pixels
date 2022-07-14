@@ -1,4 +1,4 @@
-![alt text](https://github.com/serhatdog/spreading-pixels/blob/main/repo.png?raw=true)
+![alt text](https://github.com/serhatdog/spreading-pixels/blob/main/repo-banner.png?raw=true)
 
 ## How the function works?
 **The function has two paramaters:** *resize(oI, size)*
