@@ -15,7 +15,7 @@ The dimensions of the original image are multiplied by the value entered as a pa
 
 **Spreading pixels:** *copying pixels on the x and y axes*
 
-We know that there is a numpy array in the original image in which the color values are stored, so with the help of a simple form loop; numpy arrays are shared on the new image by jumping 1 time on the x & x+1 and y & y+1 axes.
+We know that there is a numpy array in the original image in which the color values are stored, so with the help of a simple for loop; numpy arrays are shared on the new image by jumping 1 time on the x & x+1 and y & y+1 axes.
 
 ## Why We Have To Use Numba?
 
