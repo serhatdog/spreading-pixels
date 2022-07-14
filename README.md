@@ -7,6 +7,8 @@
 **The function has two paramaters:** *resize(oI, size)* <br>
     1. Original Image (OpenCV & Numpy Array) <br>
     2. Size (Original Image Res. x Size)
+    <hr>
+    
  **Creating new image:** *Using Numpy*
  
  **pI*: Processed Image, **oI*: Original Image
@@ -30,6 +32,9 @@ You don't need to replace the Python interpreter, run a separate compilation ste
 I'm developing a solution for this, but the simplest solution that can be applied right now would be to add a blur using the OpenCV library.
 If you apply a blur operation at the rate that you provide as a parameter to enlarge the image, you can get a good result.
 <hr>
+
+***e.g.***
+
 **size**: the parameter entered in the **resize** function
 
-cv2.blur(resizedimage, (*size*, *size*))
+resizedimage = cv2.blur(resizedimage, (*size*, *size*))
