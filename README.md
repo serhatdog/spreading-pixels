@@ -22,3 +22,11 @@ We know that there is a numpy array in the original image in which the color val
 Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
 
 You don't need to replace the Python interpreter, run a separate compilation step, or even have a C/C++ compiler installed. Just apply one of the Numba decorators to your Python function, and Numba does the rest.
+
+## Naturalizing the image
+I'm developing a solution for this, but the simplest solution that can be applied right now would be to add a blur using the OpenCV library.
+If you apply a blur operation at the rate that you provide as a parameter to enlarge the image, you can get a good result.
+
+**size**: the **size** parameter entered in the **resize** function
+
+cv2.blur(resizedimage, (*size*, *size*)
