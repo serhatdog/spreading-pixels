@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/serhatdog/spreading-pixels/blob/main/repo-banner.png?raw=true" alt="Spreading Pixels">
+  <img src="https://github.com/serhatdog/spreading-pixels/blob/main/repo-banner-w.png?raw=true" alt="Spreading Pixels">
 </p>
 
 <h1 align="center">How the function works?</h1>
