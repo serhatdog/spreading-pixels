@@ -11,7 +11,7 @@
  
 Preparing a canvas for a newly enlarged image using the zeros module from the numpy library.
  
-The dimensions of the original image are multiplied by the value entered as a parameter and resized
+The dimensions of the original image are multiplied by the value entered as a parameter and resized.
 
 **Spreading pixels:** *copying pixels on the x and y axes*
 
