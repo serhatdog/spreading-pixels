@@ -22,6 +22,14 @@ The dimensions of the original image are multiplied by the value entered as a pa
 
 We know that there is a numpy array in the original image in which the color values are stored, so with the help of a simple for loop; numpy arrays are shared on the new image by jumping 1 time on the x & x+1 and y & y+1 axes.
 
+<hr>
+
+**Increasing and decreasing the image size with parameters:** *resize(img, (+ or - int)times)*
+
+If the size of the image is to be increased, you must send it as a positive int value to be sent as a parameter. On the other hand, if the size of the image is to be reduced, a negative int value should be sent as a parameter.
+
+*resize(img, +3) or resize(img, -3)*
+
 <h1 align="center">Why We Have To Use Numba?</h1>
 
 Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
