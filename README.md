@@ -2,6 +2,9 @@
   <img src="https://github.com/serhatdog/spreading-pixels/blob/main/repo-banner-w.png?raw=true" alt="Spreading Pixels">
 </p>
 
+<p align="center"><b>Author: Serhat Dogan</b><p>
+<p align="center"><b>Last update: 16.07.2022</b><p>
+
 <h1 align="center">How the function works?</h1>
 
 **The function has two paramaters:** *resize(oI, size)*
