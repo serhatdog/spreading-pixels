@@ -1,27 +1,22 @@
-import numpy as np
+from numpy import zeros, uint8
 from numba import jit
 
 @jit
-def resize(oI, size):
-    
+def resize(img, size):
     if size > 0:
-
-        pI = np.zeros((len(oI)*size, len(oI[0])*size, 3), np.uint8)
-        for y in range(0, len(pI), 1):
-            for x in range(0, len(pI[0]), 1):
-                pI[y][x] = oI[y//size][x//size]
-        return pI
-
+        output_img = zeros((len(img)*size, len(img[0])*size, 3), uint8)
+        for y in range(len(output_img)):
+            for x in range(len(output_img[0])):
+                output_img[y][x] = img[y//size][x//size]
+        return output_img;
     elif size < 0:
-        
-        size *= -1 
-        pI = np.zeros((len(oI)//size, len(oI[0])//size, 3), np.uint8)
-        for y in range(0, len(oI), 1):
-            for x in range(0, len(oI[0]), 1):
-                pI[y//size][x//size] = oI[y][x]
-        return pI
-
-    return oI
+        size*=-1
+        output_img = zeros((len(img)//size, len(img[0])//size, 3), uint8)
+        for y in range(len(img)):
+            for x in range(len(img[0])):
+                output_img[y//size][x//size] = img[y][x]
+        return output_img;
+    return img;
 
 #Author: Serhat Dogan
 #https://github.com/serhatdog/spreading-pixels
