@@ -12,9 +12,9 @@ def resize(img, size):
     elif size < 0:
         size*=-1
         output_img = zeros((len(img)//size, len(img[0])//size, 3), uint8)
-        for y in range(len(img)):
-            for x in range(len(img[0])):
-                output_img[y//size][x//size] = img[y][x]
+        for y in range(len(output_img)):
+            for x in range(len(output_img[0])):
+                output_img[y][x] = img[y*size][x*size]
         return output_img;
     return img;
 
