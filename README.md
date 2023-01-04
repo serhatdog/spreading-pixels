@@ -5,7 +5,7 @@
 <p align="center"><b>Author: Serhat Dogan</b><p>
 <p align="center"><b>Last update: 16.07.2022</b><p>
 
-<h1 align="center">How the function works?</h1>
+<h1 align="center">How does the function works?</h1>
 
 **The function has two paramaters:** *resize(oI, size)*
     
@@ -67,7 +67,7 @@ If the size of the image is to be increased, you must send it as a positive int 
   1. *resize(img, +3)*
   2. *resize(img, -3)*
 
-<h1 align="center">Why We Have To Use Numba?</h1>
+<h1 align="center">Why We Should Use Numba?</h1>
 
 Numba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.
 
