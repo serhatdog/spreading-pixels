@@ -1,7 +1,7 @@
 from numpy import zeros, uint8
 from numba import jit
 
-@jit
+@jit(nopython = 'true')
 def resize(img, size):
     if size > 1:
         output_img = zeros((len(img)*size, len(img[0])*size, 3), uint8)
